@@ -143,3 +143,21 @@ Alternatively we could 'block box system test by using the front
 end to create a new product and reading the page to make sure that
 the new product has been created.
 
+### User Acceptance Testing
+
+An example of a user acceptance test would be
+
+*As a* user
+*when* I enter a product id into the update field
+*and* enter new information
+*Iwant* to be able to see that the product has updated.
+
+GIVEN that a user can access the front-end ot the API
+WHEN they enter a valid id into the update field 
+AND they enter a name AND they enter a description 
+AND they enter a price AND they click the PUT button 
+THEN the updated product is visibile on the page
+
+
+
+
