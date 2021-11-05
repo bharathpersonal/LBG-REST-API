@@ -116,9 +116,9 @@ matches this format.
 }
 ~~~
 
-### Integratation
+### Integration
 
-An example intergaration test we can create for this project is
+An example integration test we can create for this project is
 to test the RESTful endpoints.
 
 If we test the DELETE endpoint by sending a request
