@@ -116,6 +116,8 @@ matches this format.
 }
 ~~~
 
+### Integratation
+
 An example intergaration test we can create for this project is
 to test the RESTful endpoints.
 
@@ -126,4 +128,18 @@ we should expect the response to be:
 Status code: 204
 status test: no content
 
+### System Testing
+
+Our first example of system testing is "system intgration testing"
+to perform this on our project we could integration test the
+CREATE method and then check thet the out from the READ method is expected.
+
+If we created our lemon above and recieved the 201 status code
+and status text created we could then read all of the products
+and expect a status code of 200, status test of OK and message 
+body containing the lemon that we created.
+
+Alternatively we could 'block box system test by using the front
+end to create a new product and reading the page to make sure that
+the new product has been created.
 
