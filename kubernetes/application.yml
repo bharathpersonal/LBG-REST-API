@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bharathapps
+  labels:
+    app: bvmyapps
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bvmyapps
+  template:
+    metadata:
+      labels:
+        app: bvmyapps
+    spec:
+      containers:
+      - name: bvmyapps
+        image: gcr.io/lbg-training/bharath-nodeapp:v11
+        ports:
+        - containerPort: 8081
+          name: http
+          protocol: TCP
