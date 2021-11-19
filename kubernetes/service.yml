@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bharathservice
+  labels:
+    app: bvmyapps
+spec:
+  type: LoadBalancer
+  selector:
+    app: bvmyapps
+  ports:
+  - port: 5000
+    targetPort: 8081
+    protocol: TCP
